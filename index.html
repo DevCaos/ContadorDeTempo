@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='style.css' media='screen'>
+    <title>Site Pergunta</title>
+</head>
+
+<body>
+    <div>
+        <h1>Contador de Tempo</h1>
+        <strong>
+            <p id='subtitulo'>Responda as Perguntas</p>
+        </strong>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class='grupo'>
+            <div class='campo'>
+                <label for='nome'><strong>Qual o seu nome?</strong></label>
+                <input type='text' name='name' id='name' required>
+            </div>
+            <br>
+            <div class='campo'>
+                <label for='idade'><strong>Qual a sua idade?</strong></label>
+                <input type='number' name='age' id='age' required>
+            </div>
+        </br>
+            <div class='campo'>
+                <label for='hora'><strong>Quantas horas em média por dia você dorme?</strong></label>
+                    <input type='number' name='hour' id='hour'>
+            </div>
+        </fieldset>
+        <button class='botao' type='button' onClick='clica()'><strong>Concluído</strong></button>
+        <h3 id='res'></h3>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
